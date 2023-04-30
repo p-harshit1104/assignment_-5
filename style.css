@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Foldit', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Rubik Pixels', cursive;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    height:100px;
+    background: rgb(86, 80, 80);
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+   
+}
+ul li a{
+    padding:0 30px;
+    text-decoration: none;
+    color:antiquewhite;
+    font-size: 20px;
+}
+li a::after{
+    content:'';
+    display: block;
+    height:4px;
+    width:0;
+    background:antiquewhite;
+    transition:all 0.5s;
+}
+li a:hover::after{
+    width:100%;
+}
+main{
+   display:flex; 
+   height:calc(100vh - 100px);
+   align-items: center;
+   justify-content: center;
+}
+.img{
+   max-width: 700px;
+}
+.left{
+    width:30%;
+}
+main h1{
+    font-size: 50px;
+    color: coral;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+main h2{
+    font-size: 25px;
+    color:rgb(233, 174, 153);
+    text-transform:uppercase;
+    font-family: cursive;
+}
+main p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(115, 94, 64);
+    line-height: 31.5px;
+}
+.learn{
+    padding:10px 30px;
+    background:rgb(233, 174, 153) ;
+    color: white;
+    outline: none;
+    border:none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+#btn{
+    
+    padding:8px 40px;
+    color: white;
+    outline: none;
+    border:none;
+    font-weight: 500;
+    text-decoration: underline;
+    text-transform: uppercase;
+    border-radius: 40px; 
+}
